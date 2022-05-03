@@ -87,8 +87,8 @@ _If you..._
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
-* **`51`** already [patched font families](#patched-fonts)
-* Over **`1,444,400`** unique combinations/variations of patched fonts [(more details)](#combinations)
+* **`53`** already [patched font families](#patched-fonts)
+* Over **`1,229,600`** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **`2,824`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Formerly [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons], [Codeicons][codicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
@@ -121,6 +121,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Blex*][p-blex]                                   | [IBM Plex Mono][f-ibm-plex]       | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Caskaydia Cove Nerd Font*][p-cascadia]           | [Cascadia Code][f-cascadia]       | YES  | 2048    | ![w] ![m2] ![l]   |
 | [Code New Roman Nerd Font][p-code-nr]             |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
+| [Comic Mono][p-comic-mono]                        | [Comic Mono](f-comic-mono)        | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]              | NO   | 1000    | ![w] ![m2] ![l]   |
 | [DaddyTimeMono][p-daddytimemono]                  | [DaddyTimeMono][f-daddytimemono]  | NO   | 1024    | ![w] ![m2] ![l]   |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
@@ -168,12 +169,12 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 
 ## Combinations
 
-- Over **`1,485,000`** unique variations/combinations (Power Set) of patched fonts:
-  - **`50`** patched font typefaces
-  - **`719`** patched font families
-  - **`2,876`** 'complete' variations/combinations
-  - **`'1,485,410'`** _possible_ variations/combinations
-  - - **`1,488,286`** total calculated combinations (2,876 + 1,428,110)
+- Over **`1,229,600`** unique variations/combinations (Power Set) of patched fonts:
+  - **`53`** patched font typefaces
+  - **`601`** patched font families
+  - **`2,404`** 'complete' variations/combinations
+  - **`'1,229,646'`** _possible_ variations/combinations
+  - - **`1,232,050`** total calculated combinations (2,404 + 1,229,646)
 - Combinations for each font are any combination of [Variations](#variations)
 
 ### Variations
@@ -260,7 +261,7 @@ brew install --cask font-hack-nerd-font
 
 > Best option for **full control**, **all** or **some** of the fonts, or **contributing** to development.
 
-A full clone of this repository is **not** required nor efficient (mostly due to Repository size) if you are simply only interested in a limited set of fonts.  
+A full clone of this repository is **not** required nor efficient (mostly due to Repository size) if you are simply only interested in a limited set of fonts.
 
 If you do want to clone the entire repo be sure to _shallow_ clone:
 ```sh
@@ -354,7 +355,7 @@ Patching the font of your own choosing for use with the [VimDevIcons ➶][vim-de
   ```
   ./FontForge.AppImage -script $PWD/font-patcher $PWD/BaseFont.ttf -out /tmp
   ```
-  
+
 * Patching fonts with Docker:
 
   ```
@@ -575,6 +576,7 @@ Font repos
 [f-a-pro]:https://www.marksimonson.com/fonts/view/anonymous-pro
 [f-3270]:https://github.com/rbanffy/3270font
 [f-cascadia]:https://github.com/microsoft/cascadia-code
+[f-comic-mono]:https://github.com/dtinth/comic-mono-font
 [f-cousine]:https://fonts.google.com/specimen/Cousine
 [f-source]:https://github.com/adobe-fonts/source-code-pro
 [f-liberation]:https://pagure.io/liberation-fonts
@@ -611,6 +613,7 @@ Patched Font internal links
 [p-bitstream]:patched-fonts/BitstreamVeraSansMono
 [p-blex]:patched-fonts/IBMPlexMono
 [p-cascadia]:patched-fonts/CascadiaCode
+[p-comic-mono]:patched-fonts/ComicMono
 [p-cousine]:patched-fonts/Cousine
 [p-dejavu]:patched-fonts/DejaVuSansMono
 [p-droid]:patched-fonts/DroidSansMono
